@@ -1,0 +1,19 @@
+{
+  "name": "devoir-app-serverless-2022-celialctnm",
+  "version": "1.0.0",
+  "description": "Application faite avec AWS qui permet de tenir un agenda pour les cours. On peut ajouter des devoirs en spécifiant la matière, le type de devoir (travail à la maison, examen, oral...)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cegepmatane/devoir-app-serverless-2022-celialctnm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cegepmatane/devoir-app-serverless-2022-celialctnm/issues"
+  },
+  "homepage": "https://github.com/cegepmatane/devoir-app-serverless-2022-celialctnm#readme"
+}
