@@ -1,0 +1,4 @@
+[{"matiere":"Infonuagique","type":"examen","date":"2022-02-07","description":"Projet AWS","duree":180,"id":0},
+  {"matiere":"VR","type":"devoirs","date":"2022-02-10","description":"Questions  sur le mal du mouvement","duree":60,"id":1},
+  {"matiere":"Projet specialisation","type":"examen","date":"2022-02-15","description":"Rendu fiche et issue sur github","duree":180,"id":2},
+  {"matiere":"Stage","type":"devoirs","date":"2022-02-24","description":"Faire CV et lettre de presentation","duree":160,"id":3}]

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Agenda</title>
+  <link rel="stylesheet" href="decoration/application.css">
+  <style></style>
+  <script src="Agenda.js"></script>
+  <script src="AgendaDao.js"></script>
+  <script src="VueAgenda.js"></script>
+  <script src="VueListeAgenda.js"></script>
+  <script src="VueAjouterAgenda.js"></script>
+  <!--
+  https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript#Script_loading_strategies
+  Scripts loaded using the defer attribute will run in the order they appear
+  in the page and execute them as soon as the script and content are downloaded
+  -->
+  <script defer src="Application.js"></script>
+
+</head>
+<body>
+  <div id="page-chargement-application">Chargement de l'application agenda</div>
+
+
+  <script type="plain/text" id="html-vue-liste-agenda">
+  <div class="page">
+    <h1>Liste des devoirs </h1>
+    <a id="add" href="#ajouter-agenda">+</a>
+    <ul id="liste-agenda">
+      <li>
+        <img src="decoration/illustration/task-image.png" width="50" height="50">
+        <a href="#agenda/{Agenda.id}" class="liste-agenda-item">{Agenda.matiere}</a>
+      </li>
+    </ul>
+  </div>
+  </script>
+
+  <script type="plain/text" id="html-vue-agenda">
+  <div class="page">
+    <h1 id="agenda-matiere"></h1>
+    <span>Date</span>
+    <p id="agenda-date"></p>
+    <span>Type</span>
+    <p id="agenda-type"></p>
+    <span>Description</span>
+    <p id="agenda-description"></p>
+    <span>Durée</span>
+    <p id="agenda-duree"></p>
+    <a href="#" id="revenir">Revenir &agrave; la liste</a>
+  </div>
+  </script>
+
+  <script type="plain/text" id="html-vue-ajouter-agenda">
+  <div class="page">
+    <h1>Ajouter un devoir</h1>
+    <form id="formulaire-ajouter">
+      <fieldset>
+        <legend>Identification du devoir</legend>
+        <div>
+          <label for="agenda-matiere">Matiere</label>
+          <input type="text" id="agenda-matiere"/>
+        </div>
+        <div>
+          <label for="agenda-type">Type (devoirs, examens)</label>
+          <input type="text" id="agenda-type"/>
+        </div>
+        <div>
+          <label for="agenda-date">Date de rendu</label>
+          <textarea id="agenda-date"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>D&eacute;tails</legend>
+        <div>
+          <label for="agenda-description">Description</label>
+          <textarea id="agenda-description"></textarea>
+        </div>
+        <div>
+          <label for="agenda-duree">Duree</label>
+          <textarea id="agenda-duree"></textarea>
+        </div>
+      </fieldset>
+      <input class="action" type="submit" id="enregistrer" value="Enregistrer"/>
+    </form>
+    <a href="#" class="action">Annuler et revenir &agrave; la liste</a>
+  </div>
+  </script>
+
+</body>
+</html>
