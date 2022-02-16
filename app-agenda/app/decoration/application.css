@@ -1,9 +1,9 @@
-@import "normalize.css" ;
+@import "normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 @font-face {
   font-family: "Roboto Regular";
-  src: url(decoration/font/roboto/Roboto-Regular.ttf);
+  src: url(font/Roboto/Roboto-Regular.ttf);
 }
 
 :root {
